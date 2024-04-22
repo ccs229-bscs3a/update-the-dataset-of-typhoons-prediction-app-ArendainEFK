@@ -16,11 +16,15 @@ if "model" not in st.session_state:
 def app():
     st.subheader('RNN-LSTM Based Typhoon Prediction in the Philippines')
     
-    text = """Prof. Louie F. Cervantes, M. Eng. (Information Engineering)
+    text = """ Ed Francis Kyle G. Arendain
     \nCCS 229 - Intelligent Systems
-    *Department of Computer Science
+    *BS Computer Science 3A
     *College of Information and Communications Technology
     *##West Visayas State University##"""
+    st.text(text)
+
+    text = """ Dataset was modified by yours truly. Sourced from
+    Wikepedia"""
     st.text(text)
 
     text = """This Streamlit app utilizes a bi-directional Recurrent Neural Network 
@@ -31,7 +35,7 @@ def app():
     preparedness efforts."""
     st.write(text)
 
-    text = """The data is obtained from the following site : 
+    text = """The data is o btained from the following site : 
     https://en.wikipedia.org/wiki/List_of_typhoons_in_the_Philippines_(2000%E2%80%93present)"""
     st.write(text)  
 
