@@ -84,7 +84,7 @@ def app():
 
     model =  tf.keras.Sequential([  # Use Bidirectional LSTM or GRU (comment out the other)
         #tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(128, return_sequences=True), input_shape=(look_back, n_features)),
-        tf.keras.layers.GRU(128, return_sequences=True, input_shape=(look_back, n_features)),
+        tf.keras.layers.GRU(128, return_sequences=True, input_shape=(1, 1)),
         tf.keras.layers.Dropout(0.3),
         tf.keras.layers.GRU(64, return_sequences=True),  # Another GRU layer
         tf.keras.layers.Dropout(0.2),
